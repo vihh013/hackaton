@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Relatos da Cidade de Mongaguá-SP</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Barra de navegação */
+        .nav-bar {
+            width: 100%;
+            background-color: #002776;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .nav-bar a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .nav-bar img {
+            width: 50px;
+            height: auto;
+        }
+
+        .nav-bar a:hover {
+            background-color: #ff0000; /* Cor vermelha */
+        }
+
+       /* .nav-bar a.active {
+            background-color: #575757;
+        }
+*/
+        /* Contêiner principal */
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+
+        /* Sobre section */
+        .sobre {
+            background-color: #ffffff;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            border: 1px solid #002776; /* Cor azul escuro */
+
+        }
+
+        .sobre h2 {
+            color: #002776;
+            margin-bottom: 20px;
+        }
+
+        .sobre p {
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        .simbol{
+            position: relative;
+            left: -145px;
+        }
+        .tasf{
+            position: relative;
+            right: 140px;
+        }
+        .sas{
+            position: relative;
+            right: 80px
+        }
+        .rel{
+            position: relative;
+            right: 40px;
+        }
+        .perfa{
+            position: relative;
+            right: 120px
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="Home.html">Home</a>
+        <a href="Relatos.html" class="rel">Relatos</a>
+        <a href="sobre.html"   class="sas">Sobre  </a>
+        <img src="mongagua.png" alt="Bandeira de Mongaguá" class="simbol">
+        <a href="contato.html" class="tasf">Contato</a>
+         <a href="perfil.html" class="perfa">Perfil</a>
+    </div>
+
+    <div class="container">
+        <div class="sobre">
+            <h2>Sobre o Site</h2>
+            <p>O site "Relatos da Cidade de Mongaguá-SP" foi criado para proporcionar uma plataforma onde os moradores da cidade de Mongaguá podem compartilhar relatos diários sobre sua comunidade. Sejam eventos positivos, negativos ou simplesmente atualizações do dia a dia, este espaço visa fortalecer a comunidade local, permitindo que todos fiquem informados e conectados.</p>
+            <p>Nossa missão é oferecer uma maneira fácil e acessível para que os cidadãos de Mongaguá compartilhem informações relevantes entre si, promovendo um ambiente de colaboração e transparência na cidade.</p>
+        </div>
+    </div>
+
+    <!-- Espaço para o JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

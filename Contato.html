@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Relatos da Cidade de Mongaguá-SP</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Barra de navegação */
+        .nav-bar {
+            width: 100%;
+            background-color: #002776;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .nav-bar a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #ff0000; /* Cor vermelha */
+        }
+
+        /*.nav-bar a.active {
+            background-color: #575757;
+        }
+        */
+
+        /* Contêiner principal */
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Formulário de contato */
+        .contato {
+            background-color: #ffffff;;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            border: 1px solid #002776; /* Cor azul escuro */
+
+        }
+
+        .contato h2 {
+            color: #002776;
+            margin-bottom: 20px;
+        }
+
+        .contato p {
+            color: #000000;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .contato .info-item {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .contato .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contato .info-item span {
+            font-weight: bold;
+            margin-right: 10px;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .contato .info-item a {
+            color: #002776;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contato .info-item a:hover {
+            color: #002776;
+        }
+
+        /* Mapa */
+        .mapa {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            border: 1px solid #002776; /* Cor azul escuro */
+
+        }
+
+        .mapa h2 {
+            color: #002776;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .mapa iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* Formulário de Contato */
+        .formulario {
+            background-color: #ffffff;;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            border: 1px solid #002776; /* Cor azul escuro */
+
+        }
+
+        .formulario h2 {
+            color: #002776;
+            margin-bottom: 20px;
+        }
+
+        .formulario form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .formulario form input,
+        .formulario form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+            resize: none;
+            font-size: 14px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .formulario form button {
+            background-color: #002776; /* Cor azul escuro */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .nav-bar img {
+            width: 50px;
+            height: auto;
+        }
+
+        .formulario form button:hover {
+            background-color: #ff0000; /* Cor vermelha */
+        }
+
+        .simbol{
+            position: relative;
+            left: -160px;
+        }
+        .tasf{
+            position: relative;
+            right: 120px;
+        }
+        .sas{
+            position: relative;
+            right: 90px
+        }
+        .rel{
+            position: relative;
+            right: 50px;
+        }
+        .perfa{
+            position: relative;
+            right: 120px
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="Home.html">Home</a>
+        <a href="Relatos.html" class="rel">Relatos</a>
+        <a href="sobre.html" class="sas">Sobre</a>
+        <img src="mongagua.png" alt="Bandeira de Mongaguá" class="simbol">
+        <a href="contato.html" class="tasf">Contato</a>
+         <a href="perfil.html" class="perfa">Perfil</a>
+    </div>
+
+    <div class="container">
+        <!-- Informações de Contato -->
+        <div class="contato">
+            <h2>Entre em Contato</h2>
+            <p>Entre em contato conosco para qualquer dúvida, sugestão ou informação adicional.</p>
+            
+            <div class="info-item">
+             <p class="ee">   <span>Endereço:</span></p>
+               <p class="aa"> Prefeitura Municipal de Mongaguá<br>
+                Rua São Paulo, 101 - Centro<br>
+                Mongaguá - SP<br>
+                CEP: 11730-000
+            </p>
+            </div>
+
+            <div class="info-item">
+               <p class="bb"> <span>Telefone:</span>
+                <a href="tel:+551338515000">(13) 3851-5000</a>
+            </p>
+            </div>
+
+            <div class="info-item">
+                <p class="cc"><span> Email:</span>
+                <a href="mailto:contato@mongagua.sp.gov.br">contato@mongagua.sp.gov.br</a>
+                </p>
+            </div>
+
+            <div class="info-item">
+                <p class="dd"><span>Redes Sociais:</span>
+                <a href="#" target="_blank">Facebook</a>, 
+                <a href="#" target="_blank">Instagram</a>, 
+                <a href="#" target="_blank">Twitter</a>
+            </p>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="mapa">
+            <h2>Nossa Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1821.0894414688116!2d-46.620221863909386!3d-24.09520396057085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce27bdb87fac93%3A0x937730671b5e17c2!2sPrefeitura%20da%20Est%C3%A2ncia%20Balnearia%20de%20Mongagua!5e0!3m2!1spt-BR!2sbr!4v1716928154222!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Formulário de Contato -->
+        <div class="formulario">
+            <h2>Envie uma Mensagem</h2>
+            <form action="#" method="post">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="mensagem" rows="4" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Espaço para o JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

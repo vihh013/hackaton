@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário - Relatos da Cidade de Mongaguá-SP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Cor branca */
+            color: #000000; /* Cor preta */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .nav-bar {
+            width: 100%;
+            background-color: #002776; /* Cor azul escuro */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .nav-bar a {
+            color: #ffffff; /* Cor branca */
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: block;
+        }
+        .nav-bar a:hover {
+            background-color: #ff0000; /* Cor vermelha */
+        }
+        .nav-bar img {
+            width: 50px;
+            height: auto;
+        }
+        .container {
+            background-color: #ffffff; /* Cor branca */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            margin: 70px auto;
+            box-sizing: border-box;
+            border: 1px solid #002776; /* Cor azul escuro */
+        }
+        .profile {
+            text-align: left;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto 20px;
+            border: 3px solid #ff0000; /* Cor vermelha */
+        }
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .info-item span:first-child {
+            font-weight: bold;
+        }
+        .edit-btn, .save-btn {
+            background-color: #002776; /* Cor azul escuro */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .edit-btn:hover, .save-btn:hover {
+            background-color: #ff0000; /* Cor vermelha */
+        }
+        .edit-profile {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #002776; /* Cor azul escuro */
+            font-size: 14px;
+            background-color: #f0f0f0; /* Cor de fundo claro */
+            color: #000000; /* Cor preta */
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff; /* Cor branca */
+            color: #000000; /* Cor preta */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            text-align: center;
+            border: 1px solid #002776; /* Cor azul escuro */
+        }
+        .popup button {
+            background-color: #002776; /* Cor azul escuro */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .popup button:hover {
+            background-color: #ff0000; /* Cor vermelha */
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+
+        .simbol{
+            position: relative;
+            left: -145px;
+        }
+        .tasf{
+            position: relative;
+            right: 140px;
+        }
+        .sas{
+            position: relative;
+            right: 80px
+        }
+        .rel{
+            position: relative;
+            right: 40px;
+        }
+        .perfa{
+            position: relative;
+            right: 120px
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="Home.html">Home</a>
+        <a href="Relatos.html" class="rel">Relatos</a>
+        <a href="sobre.html" class="sas">Sobre</a>
+        <img src="mongagua.png" alt="Bandeira de Mongaguá" class="simbol">
+        <a href="contato.html" class="tasf">Contato</a>
+        <a href="perfil.html" class="perfa">Perfil</a>
+    </div>
+    <div class="container">
+        <div class="profile">
+            <h2>Perfil do Usuário</h2>
+            <img src="https://via.placeholder.com/150" alt="Foto do Usuário" onclick="showPopup()">
+            <div class="info-item">
+                <span>Nome:</span> <span id="userName">João da Silva</span>
+            </div>
+            <div class="info-item">
+                <span>Email:</span> <span id="userEmail">joao.silva@example.com</span>
+            </div>
+            <div class="info-item">
+                <span>Endereço:</span> <span id="userAddress">Rua Exemplo, 123</span>
+            </div>
+            <div class="info-item">
+                <span>Telefone:</span> <span id="userPhone">(13) 1234-5678</span>
+            </div>
+            <button class="edit-btn" onclick="toggleEditProfile()">Editar Perfil</button>
+        </div>
+        <div class="edit-profile" id="editProfile">
+            <h2>Editar Perfil</h2>
+            <div class="input-group">
+                <label for="editName">Nome:</label>
+                <input type="text" id="editName" value="João da Silva">
+            </div>
+            <div class="input-group">
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail" value="joao.silva@example.com">
+            </div>
+            <div class="input-group">
+                <label for="editAddress">Endereço:</label>
+                <input type="text" id="editAddress" value="Rua Exemplo, 123">
+            </div>
+            <div class="input-group">
+                <label for="editPhone">Telefone:</label>
+                <input type="text" id="editPhone" value="(13) 1234-5678">
+            </div>
+            <button class="save-btn" onclick="saveProfile()">Salvar</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <h2>Alterar Foto de Perfil</h2>
+        <div class="input-group">
+            <input type="file" id="profilePicInput" accept="image/*">
+        </div>
+        <button class="upload-btn" onclick="uploadProfilePic()">Enviar</button>
+    </div>
+    <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+
+    <script src="perfil.js"></script>
+</body>
+</html>

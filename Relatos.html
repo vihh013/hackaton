@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Relatos</title>
+    <link rel="stylesheet" href="Relatos.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="mongagua.png" class="img"></a>
+        <a href="Home.html" class="home">Home</a>
+         <a href="Relatos.html"  class="active">Relatos</a>
+        
+        <a href="sobre.html" class= "sobre">Sobre</a>
+        <a href="contato.html" class="con" >Contato</a>
+      <a href="perfil.html" class="per" >Perfil</a>
+    </div>
+    <div class="container">
+    
+            <h1 style="color:#002776 ;">Relatos da Cidade de Mongaguá-SP</h1>
+        <div class="input-container">
+            <input type="text" id="nomeInput" placeholder="Seu nome">
+            <input type="text" id="enderecoInput" placeholder="Endereço do ocorrido">
+            <input type="text" id="horarioInput" placeholder="Horário do ocorrido (ex: 27/05/2024 14:00)">
+            <textarea id="relatoInput" rows="4" placeholder="Escreva seu relato..."></textarea>
+            <button id="enviarRelatoBtn">Enviar Relato</button>
+        </div>
+    </div>
+    <div class="relatos" id="relatos">
+        <!-- Relatos vão aparecer aqui -->
+    </div>
+
+    <div class="popup" id="popup">
+        <p id="popupMessage"></p>
+        <button id="fecharPopupBtn">Fechar</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="Relatos.js"></script>
+</body>
+</html>

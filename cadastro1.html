@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Relatos da Cidade de Mongaguá-SP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Cor branca */
+            color: #ffffff; /* Cor branca */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff; /* Cor branca */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        .container h2 {
+            color: #002776; /* Cor azul escuro */
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+            width: 100%;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #002776; /* Cor azul escuro */
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #002776; /* Cor azul escuro */
+            font-size: 14px;
+            background-color: #f0f0f0; /* Cor de fundo claro */
+            color: #000000; /* Cor preta */
+        }
+        .signup-btn {
+            background-color: #ff0000; /* Cor vermelha */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .signup-btn:hover {
+            background-color: #002776; /* Cor azul escuro */
+        }
+        .login-link {
+            margin-top: 10px;
+            display: block;
+            color: #002776; /* Cor azul escuro */
+            text-decoration: none;
+        }
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form id="signupForm">
+            <div class="input-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm_password">Confirmar Senha:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <a href="login.html" button type="submit" class="signup-btn">Cadastrar  </button> </a>
+            ,
+            <a href="login.html" class="login-link">Voltar para o Login</a>
+        </form>
+    </div>
+</body>
+</html>

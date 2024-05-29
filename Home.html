@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Home - Relatos da Cidade de Mongaguá-SP</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Cor azul escuro */
+            color: #ffffff; /* Cor branca */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+
+        /* Barra de navegação */
+        .nav-bar {
+            width: 100%;
+            background-color: #002776; /* Cor branca */
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        .nav-bar a {
+            color: #f6f8f7; /* Cor azul escuro */
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #ff0000; /* Cor vermelha */
+        }
+
+        .nav-bar a.active {
+            background-color: #002776; /* Cor azul escuro */
+            color: #ffffff; /* Cor branca */
+        }
+
+        .nav-bar img {
+            width: 50px;
+            height: auto;
+        }
+
+        /* Contêiner principal */
+        .container {
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 5px 0 10px 0px;
+
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #bbb9b9;
+            text-align: center;
+            padding: 60px 0;
+            width: 700px;
+            position: relative;
+            left: 35px;
+        }
+
+        .hero h1 {
+            color: #002776;
+            margin-bottom: 20px;
+        }
+
+        /* Serviços section */
+        .servicos {
+            background-color: #ffffff; /* Cor branca */
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .servicos h2 {
+            color: #002776; /* Cor azul escuro */
+            margin-bottom: 20px;
+        }
+
+        .servicos-item {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            max-width: 300px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .servicos-item h3 {
+            color: #002776;;
+            margin-bottom: 10px;
+        }
+
+        .servicos-item p {
+            color: #002776;
+        }
+
+        /* Informações section */
+        .informacoes {
+            background-color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .informacoes h2 {
+            color: #002776;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            max-width: 300px;
+        }
+
+        .info-item h3 {
+            color:#002776;
+            margin-bottom: 10px;
+        }
+        .simbol{
+            position: relative;
+            left: -50px;
+        }
+        .tasf{
+            position: relative;
+            right: 90px;
+        }
+        .sas{
+            position: relative;
+            right: 50px
+        }
+        .rel{
+            position: relative;
+            right: 20px;
+        }
+        .perfa{
+            position: relative;
+            right: 90px
+        }
+        .perfa1{
+            position: relative;
+            right: 120px
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="Home.html" class="active">Home</a>
+        <a href="Relatos.html" class="rel">Relatos</a>
+        <a href="sobre.html" class="sas">Sobre</a>
+        <img src="mongagua.png" alt="Bandeira de Mongaguá" class="simbol">
+        <a href="contato.html" class="tasf">Contato</a>
+        <a href="perfil.html" class="perfa">Perfil</a>
+        <a href="login.html" class="perfa1"> Sair</a>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Bem-vindo aos Relatos da Cidade de Mongaguá-SP</h1>
+        </div>
+
+        <div class="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-item">
+                <h3>Serviço 1</h3>
+                <p>Descrição do Serviço 1.</p>
+            </div>
+            <div class="servicos-item">
+                <h3>Serviço 2</h3>
+                <p>Descrição do Serviço 2.</p>
+            </div>
+            <div class="servicos-item">
+                <h3>Serviço 3</h3>
+                <p>Descrição do Serviço 3.</p>
+            </div>
+        </div>
+
+        <div class="informacoes">
+            <h2>Informações Úteis</h2>
+            <div class="info-box">
+                <div class="info-item">
+                    <h3>Informação 1</h3>
+                    <p>Descrição da informação 1.</p>
+                </div>
+                <div class="info-item">
+                    <h3>Informação 2</h3>
+                    <p>Descrição da informação 2.</p>
+                </div>
+                <div class="info-item">
+                    <h3>Informação 3</h3>
+                    <p>Descrição da informação 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
